@@ -697,7 +697,10 @@ input {
 }
 .checkbox-button {
   display: flex;
+  flex-direction: center;
   flex-direction: row;
+  margin-left: 40px;
+  position: relative;
   gap: 5px;
 }
 .input-box {
@@ -709,6 +712,8 @@ input {
   width: 448px;
   height: 120px;
   margin-top: 4px;
+  padding-top: 10px;
+  padding-left: 12px;
 }
 label:hover{
   fill: #2196f3;
@@ -719,16 +724,11 @@ textarea::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   position: relative;
-  left: 16px;
-  top: 12px;
+  top: 10px;
+  left: 12px;
 }
 .terms {
   color: rgba(33, 150, 243, 1);
-}
-.modal-icon {
-  position: relative;
-  bottom: 25px;
-  left: 10px;
 }
 .footer-form {
   display: flex;
@@ -796,21 +796,25 @@ textarea::placeholder {
   bottom: 25px;
   left: 10px;
 }
+textarea:hover,
 input:hover {
   border: 1px solid #2196f3;
   cursor: pointer;
 }
 textarea:hover {
   cursor: pointer;
-  fill: #2196f3;
+  color: #2196f3;
 }
+
 .replaced-checkbox {
+  margin-top: 17px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid black;
-  margin-top: 2px;
-  margin-left:30PX ;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 5px;
 }
 .terms-text {
   font-size: 14px;
@@ -818,19 +822,17 @@ textarea:hover {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.checkbox {
-visibility: hidden;
 }
 .checkbox:checked + .replaced-checkbox {
-  background: #2196f3;
   border-color: #2196f3;
 }
-.checkbox-mark{
+.checkbox-mark {
   position:static;
-  top: -2px;
-  fill:#eee
+  fill:#eee;
+}
+.checkbox{
+  border-color: #eee;
+}
+.close-button:hover{
+  fill: #2196f3;
 }
