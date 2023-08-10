@@ -715,7 +715,8 @@ input {
   padding-top: 10px;
   padding-left: 12px;
 }
-label:hover{
+label:hover,
+label:focus{
   fill: #2196f3;
 }
 textarea::placeholder {
@@ -797,11 +798,17 @@ textarea::placeholder {
   left: 10px;
 }
 textarea:hover,
-input:hover {
+input:hover,
+textarea:focus,
+input:focus{
   border: 1px solid #2196f3;
   cursor: pointer;
 }
-textarea:hover {
+.modal-icon:focus{
+  color: #2196f3;
+}
+textarea:hover,
+textarea:focus {
   cursor: pointer;
   color: #2196f3;
 }
@@ -832,7 +839,10 @@ textarea:hover {
 }
 .checkbox{
   border-color: #eee;
+  position: relative;
+  right: -1px;
 }
-.close-button:hover{
+.close-button:hover,
+.close-button:focus{
   fill: #2196f3;
 }
