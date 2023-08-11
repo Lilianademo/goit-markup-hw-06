@@ -715,6 +715,9 @@ input {
   padding-top: 10px;
   padding-left: 12px;
 }
+.input-box-text:focus{
+  border-color: #2196f3;
+}
 label:hover,
 label:focus{
   fill: #2196f3;
@@ -799,18 +802,20 @@ textarea::placeholder {
 }
 textarea:hover,
 input:hover,
-textarea:focus,
 input:focus{
   border: 1px solid #2196f3;
   cursor: pointer;
 }
-.modal-icon:focus{
-  color: #2196f3;
+.input-box:focus + .modal-icon{
+  fill: #2196f3;
 }
 textarea:hover,
-textarea:focus {
+textarea:focus{
   cursor: pointer;
   color: #2196f3;
+}
+textarea:focus + . {
+  fill: #2196f3;
 }
 
 .replaced-checkbox {
